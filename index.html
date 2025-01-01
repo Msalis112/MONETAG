@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Ads By ヅ 𝑺𝑰𝒀𝑨𝑴 ៚</title>
     <script src='//niphaumeenses.net/vignette.min.js' data-zone='8712034' data-sdk='show_8712034'></script>
     <style>
         /* Global Styles */
@@ -107,9 +106,11 @@
 </head>
 <body>
     <div class="app-container">
-        <h2>Auto Ads By ヅ 𝑺𝑰𝒀𝑨𝑴 ៚</h2>
-        <div class="developer-label">Developed By ヅ 𝑺𝑰𝒀𝑨𝑴 ៚</div>
-        
+show_8712034().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen ad ad!');
+})  
         <div class="stats">
             <p id="ads-watched">Watched Ads: 0</p>
             <p id="points-earned">Earned Points: 0</p>
@@ -118,11 +119,18 @@
         <button class="button" onclick="watchAd()">Watch Ad</button>
         <button class="button" onclick="autoAds()">Auto Show Ads</button>
         <button class="button" onclick="stopAutoAds()">Stop Auto Ads</button>
+        
+show_8712034().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen ad ad!');
+})
+        
     </div>
 
     <div id="toast"></div>
 
-    <!-- Monetag Script -->
+   <!-- Monetag Script -->
 <script src='//niphaumeenses.net/vignette.min.js' data-zone='8712034' data-sdk='show_8712034'></script>
     <script>
         let adsWatched = 0;
@@ -150,9 +158,13 @@ show_8712034().then(() => {
                     document.getElementById('ads-watched').innerText = `Watched Ads: ${adsWatched}`;
                     document.getElementById('points-earned').innerText = `Earned Points: ${points}`;
                     showToast('Ad watched successfully!');
-                }).catch(() => showToast('Ad failed to load.'));
-            } else {
-                showToast('Ad script not loaded.');
+                }).
+show_8712034().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen ad ad!');
+})
+        
             }
         }
 
@@ -165,8 +177,7 @@ show_8712034().then(() => {
     alert('You have seen ad ad!');
 })
         
-        function stopAutoAds() {
-            
+        function stopAutoAds() {        
 show_8712034().then(() => {
     // You need to add your user reward function here, which will be executed after the user watches the ad.
     // For more details, please refer to the detailed instructions.
@@ -174,8 +185,7 @@ show_8712034().then(() => {
 })
         
             clearInterval(autoAdsInterval);
-            showToast('Auto Ads Stopped');
-        }
-    </script>
+            showToast('Auto Ads Stop' )
+       <script src='//niphaumeenses.net/vignette.min.js' data-zone='8712034' data-sdk='show_8712034'></script> 
 </body>
 </html>
