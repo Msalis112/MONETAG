@@ -140,8 +140,11 @@
         }
 
         function watchAd() {
-            if (typeof show_8580678 === 'function') {
-                show_8580678().then(() => {
+show_8712034().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen ad ad!');
+})
                     adsWatched++;
                     points += pointsPerAd;
                     document.getElementById('ads-watched').innerText = `Watched Ads: ${adsWatched}`;
@@ -156,9 +159,20 @@
         function autoAds() {
             autoAdsInterval = setInterval(watchAd, 2000);
             showToast('Auto Ads Started');
-        }
-
+show_8712034().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen ad ad!');
+})
+        
         function stopAutoAds() {
+            
+show_8712034().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen ad ad!');
+})
+        
             clearInterval(autoAdsInterval);
             showToast('Auto Ads Stopped');
         }
